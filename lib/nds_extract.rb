@@ -93,7 +93,7 @@ def gross_per_studio(collection)
    if !result[movie[:studio]]
      result[movie[:studio]] = movie[:worldwide_gross]
    else 
-     result[movie[:stidio]] += movie[:worldwide_gross]
+     result[movie[:studio]] += movie[:worldwide_gross]
       end
       i += 1
    end
@@ -141,7 +141,7 @@ def movies_with_directors_set(source)
   
   
   
-  while i < source.lenght  do 
+  while i < source.length  do 
     dir_info_hash = source[i]
    
     director_name = dir_info_hash[:name]
